@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <!-- Tailwind Library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body class="text-gray-800 antialiased">
 
@@ -21,7 +24,7 @@
           <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
               <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="https://www.creative-tim.com/learning-lab/tailwindcss-starter-project#/presentation">
                 <!-- Nav Title -->
-                Creative Tim
+                JS Projects
               </a>
               <!-- Hamburger Menu (Mobile) -->
               <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
@@ -34,28 +37,29 @@
           <!-- Social Media Button -->
           <li class="flex items-center">
             <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="#pablo">
+              href="https://www.linkedin.com/in/jordandivyansh/" target="_blank">
               <!-- Icon -->
-              <i class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "></i>
-              <span class="lg:hidden inline-block ml-2">Share</span>
+              <i class="lg:text-gray-300 text-gray-500 fab fa-linkedin text-lg leading-lg "></i>
+              <span class="lg:hidden inline-block ml-2">Linkedin</span>
+            </a>
+            
+          </li>
+          <!-- Social Media Button -->
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="https://leetcode.com/jordandivyansh/" target="_blank">
+              <!-- Icon -->
+              <i class="lg:text-gray-300 text-gray-500 fas fa-terminal text-lg leading-lg "></i>
+              <span class="lg:hidden inline-block ml-2">leetcode</span>
             </a>
           </li>
           <!-- Social Media Button -->
           <li class="flex items-center">
             <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="#pablo">
-              <!-- Icon -->
-              <i class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "></i>
-              <span class="lg:hidden inline-block ml-2">Tweet</span>
-            </a>
-          </li>
-          <!-- Social Media Button -->
-          <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="#pablo">
+              href="https://github.com/jordandivyansh/" target="_blank">
               <!-- Icon -->
               <i class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "></i>
-              <span class="lg:hidden inline-block ml-2">Star</span>
+              <span class="lg:hidden inline-block ml-2">Github</span>
             </a>
           </li>
         </ul>
@@ -70,7 +74,7 @@
       <!-- Background Image -->
       <div
         class="absolute top-0 w-full h-full bg-center bg-cover"
-        style="">
+        style="background: url(https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80);">
         <!-- Overlay -->
         <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
       </div>
@@ -79,11 +83,18 @@
         <div class="items-center flex flex-wrap">
           <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
             <div class="pr-12">
-              <h1 class="text-white font-semibold text-5xl">
-                Welcome your epiphany.
+              <h1 class="text-white font-semibold text-5xl" data-aos="fade-up">
+                Project Portfolio
               </h1>
-              <p class="mt-4 text-lg text-gray-300">
-                Lorem ipsum dolor sit. Eum totam aspernatur aliquam praesentium aperiam magni, dignissimos, atque incidunt fuga nulla distinctio eligendi enim placeat nesciunt, soluta maxime nihil ipsa minus!
+              <p class="mt-4 text-lg text-gray-300" data-aos="fade-right" data-aos-delay="1000" >
+                Around 20 projects using HTML, CSS, JavaScript with most of them also using APIs.
+                <br>
+                Some React Projects on the way !
+                <br> 
+                MERN Stack projects will also be added soon !
+                <br>
+                And a bunch of Python and Data Analysis Projects
+                <br> <b> Check them out ! </b>
               </p>
             </div>
           </div>
@@ -118,7 +129,7 @@
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap">
           <!-- Card -->
-          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos-delay="1400" data-aos="fade-right">
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div class="px-4 py-5 flex-auto">
                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
@@ -126,15 +137,17 @@
                   <i class="fas fa-robot"></i>
                 </div>
                 <!-- Text Box -->
-                <h6 class="text-xl font-semibold">I'm A Robot</h6>
+                <h6 class="text-xl font-semibold">Project 1</h6>
                 <p class="mt-2 mb-4 text-gray-600">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus autem maxime expedita aspernatur tempora.
                 </p>
               </div>
             </div>
           </div>
+
+          
           <!-- Card -->
-          <div class="w-full md:w-4/12 px-4 text-center">
+          <div class="w-full md:w-4/12 px-4 text-center" data-aos="fade-up" data-aos-delay="1600">
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div class="px-4 py-5 flex-auto">
                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
@@ -142,7 +155,7 @@
                   <i class="fas fa-atom"></i>
                 </div>
                 <!-- Text Box -->
-                <h6 class="text-xl font-semibold">Atom Power</h6>
+                <h6 class="text-xl font-semibold">Project 2</h6>
                 <p class="mt-2 mb-4 text-gray-600">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia nemo ex aut temporibus, in molestiae earum ratione.
                 </p>
@@ -150,7 +163,7 @@
             </div>
           </div>
           <!-- Card -->
-          <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center" data-aos-delay="1400" data-aos="fade-left">
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div class="px-4 py-5 flex-auto">
                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
@@ -158,7 +171,193 @@
                   <i class="fas fa-bolt"></i>
                 </div>
                 <!-- Text Box -->
-                <h6 class="text-xl font-semibold">Infinite Energy</h6>
+                <h6 class="text-xl font-semibold">Project 3</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ipsa veritatis error ratione sunt repudiandae, quasi atque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos-delay="300" data-aos="fade-right">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <!-- Icon -->
+                  <i class="fas fa-robot"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Project 1</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus autem maxime expedita aspernatur tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="w-full md:w-4/12 px-4 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <!-- Icon -->
+                  <i class="fas fa-atom"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Project 2</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia nemo ex aut temporibus, in molestiae earum ratione.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center" data-aos-delay="300" data-aos="fade-left">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                  <!-- Icon -->
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Project 3</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ipsa veritatis error ratione sunt repudiandae, quasi atque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos-delay="300" data-aos="fade-right">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <!-- Icon -->
+                  <i class="fas fa-robot"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Project 1</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus autem maxime expedita aspernatur tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="w-full md:w-4/12 px-4 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <!-- Icon -->
+                  <i class="fas fa-atom"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Project 2</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia nemo ex aut temporibus, in molestiae earum ratione.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center" data-aos-delay="300" data-aos="fade-left">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                  <!-- Icon -->
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Project 3</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ipsa veritatis error ratione sunt repudiandae, quasi atque.
+                </p>
+              </div>
+            </div>
+          </div><div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos-delay="300" data-aos="fade-right">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <!-- Icon -->
+                  <i class="fas fa-robot"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Project 1</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus autem maxime expedita aspernatur tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="w-full md:w-4/12 px-4 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <!-- Icon -->
+                  <i class="fas fa-atom"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Project 2</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia nemo ex aut temporibus, in molestiae earum ratione.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center" data-aos-delay="300" data-aos="fade-left">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                  <!-- Icon -->
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Project 3</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ipsa veritatis error ratione sunt repudiandae, quasi atque.
+                </p>
+              </div>
+            </div>
+          </div><div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos-delay="300" data-aos="fade-right">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <!-- Icon -->
+                  <i class="fas fa-robot"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Project 1</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus autem maxime expedita aspernatur tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="w-full md:w-4/12 px-4 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <!-- Icon -->
+                  <i class="fas fa-atom"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Project 2</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia nemo ex aut temporibus, in molestiae earum ratione.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center" data-aos-delay="300" data-aos="fade-left">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                  <!-- Icon -->
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Project 3</h6>
                 <p class="mt-2 mb-4 text-gray-600">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ipsa veritatis error ratione sunt repudiandae, quasi atque.
                 </p>
@@ -167,10 +366,12 @@
           </div>
         </div>
 
+        
+
         <!-- Text Box and Card Container -->
         <div class="flex flex-wrap items-center mt-32">
           <!-- Text Box Container -->
-          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" data-aos="zoom-in-right">
             <!-- Text Box -->
             <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
               <!-- Icon -->
@@ -193,12 +394,12 @@
           </div>
 
           <!-- Image Cap & Text Card -->
-          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="flip-left" data-aos-delay="1000">
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
               <!-- Image -->
               <img
                 alt="..."
-                src=""
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
                 class="w-full align-middle rounded-t-lg"
               />
               <blockquote class="relative p-8 mb-4">
@@ -227,6 +428,8 @@
           </div>
         </div>
       </div>
+
+      
     </section>
     <!-- End of Services Section -->
 
@@ -255,16 +458,16 @@
       <!-- Section Container -->
       <div class="container mx-auto px-4">
         <div class="items-center flex flex-wrap">
-          <div class="w-full md:w-4/12 ml-auto mr-auto px-4"> 
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4" data-aos="flip-right" data-aos-delay="1000"> 
             <!-- Image -->
             <img
               alt="..."
               class="max-w-full rounded-lg shadow-lg"
-              src=""
+              src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
             />
           </div>
           <!-- Text Box Container-->
-          <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="zoom-in-left" >
             <div class="md:pr-12">
               <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
                 <!-- Icon -->
@@ -346,12 +549,12 @@
         <!-- Flex Row Container -->
         <div class="flex flex-wrap">
           <!-- Item -->
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in">
             <div class="px-6">
               <!-- Image -->
               <img
                 alt="..."
-                src=""               
+                src="./assets/img/team-1-800x800.jpg"               
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px;"
               />
@@ -379,12 +582,12 @@
             </div>
           </div>
           <!-- Item -->
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="400">
             <div class="px-6">
               <!-- Image -->
               <img
                 alt="..."
-                src=""
+                src="./assets/img/team-2-800x800.jpg"
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px;"
               />
@@ -408,12 +611,12 @@
             </div>
           </div>
           <!-- Item -->
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="600">
             <div class="px-6">
               <!-- Image -->
               <img
                 alt="..."
-                src=""
+                src="./assets/img/team-3-800x800.jpg"
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px;"
               />
@@ -441,12 +644,12 @@
             </div>
           </div>
           <!-- Item -->
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="800">
             <div class="px-6">
               <!-- Image -->
               <img
                 alt="..."
-                src=""
+                src="./assets/img/team-4-470x470.png"
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px;"
               />
@@ -509,18 +712,16 @@
         <!-- Text Box -->
         <div class="flex flex-wrap text-center justify-center">
           <div class="w-full lg:w-6/12 px-4">
-            <h2 class="text-4xl font-semibold text-white">Build something</h2>
+            <h2 class="text-4xl font-semibold text-white">JORDAN</h2>
             <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-              Put the potentially record low maximum sea ice extent tihs year
-              down to low ice. According to the National Oceanic and
-              Atmospheric Administration, Ted, Scambos.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum suscipit rerum natus modi nihil asperiores ad neque sunt ab sit fuga quam, minus nobis, commodi maiores atque tenetur doloribus!
             </p>
           </div>
         </div>
         <!-- Flex Row Container -->
         <div class="flex flex-wrap mt-12 justify-center">
           <!-- Item -->
-          <div class="w-full lg:w-3/12 px-4 text-center">
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos-delay="600" data-aos="fade-in">
             <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
               <!-- Icon -->
               <i class="fas fa-medal text-xl"></i>
@@ -535,7 +736,7 @@
             </p>
           </div>
           <!-- Item -->
-          <div class="w-full lg:w-3/12 px-4 text-center">
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos-delay="400" data-aos="fade-in">
             <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
               <!-- Icon -->
               <i class="fas fa-poll text-xl"></i>
@@ -550,7 +751,7 @@
             </p>
           </div>
           <!-- Item -->
-          <div class="w-full lg:w-3/12 px-4 text-center">
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos-delay="200" data-aos="fade-in">
             <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
               <!-- Icon -->
               <i class="fas fa-lightbulb text-xl"></i>
@@ -660,87 +861,64 @@
         <div class="w-full lg:w-6/12 px-4">
           <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
           <h5 class="text-lg mt-0 mb-2 text-gray-700">
-            Find us on any of these platforms, we respond 1-2 business days.
+            Find me on any of these platforms, and let's connect.
           </h5>
           <!-- Social Media Buttons -->
           <div class="mt-6">
-            <a href="https://www.twitter.com/creativetim" target="_blank"><i class="fab fa-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
-            <a href="https://www.facebook.com/creativetim" target="_blank"><i class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
-            <a href="https://www.dribbble.com/creativetim" target="_blank"><i class="fab fa-dribbble bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
-            <a href="https://www.github.com/creativetimofficial" target="_blank"><i class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            <a href="https://www.instagram.com/jordandivyansh" target="_blank"><i class="fab fa-instagram bg-white text-pink-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+           
+            <a href="https://www.facebook.com/jordandivyansh" target="_blank"><i class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            <a href="https://www.linkedin.com/in/jordandivyansh" target="_blank"><i class="fab fa-linkedin bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            <a href="https://www.github.com/jordandivyansh" target="_blank"><i class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            
+
+            <a href="https://www.twitter.com/jordandivyansh" target="_blank"><i class="fab fa-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
           </div>
         </div>
       <!-- List Container -->
-      <div class="w-full lg:w-6/12 px-4">
-          <div class="flex flex-wrap items-top mb-6">
-            <!-- List 1 -->
-            <div class="w-full lg:w-4/12 px-4 ml-auto">
-              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
-              <ul class="list-unstyled">
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://www.creative-tim.com/presentation">About Us</a>
-                </li>
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://blog.creative-tim.com">Blog</a>
-                </li>
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://www.github.com/creativetimofficial">Github</a>
-                </li>
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://www.creative-tim.com/bootstrap-themes/free">Free Products</a>
-                </li>
-              </ul>
-            </div>
-            <!-- List 2 -->
-            <div class="w-full lg:w-4/12 px-4">
-              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
-              <ul class="list-unstyled">
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">MIT License</a>
-                </li>
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://creative-tim.com/terms">Terms &amp; Conditions</a>
-                </li>
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://creative-tim.com/privacy">Privacy Policy</a>
-                </li>
-                <li>
-                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://creative-tim.com/contact-us">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      
       </div>
       <!-- Line Break -->
       <hr class="my-6 border-gray-400" />
       <!-- Footer Text -->
       <div class="flex flex-wrap items-center md:justify-between justify-center">
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-          <div class="text-sm text-gray-600 font-semibold py-1">
-            Copyright © 2019 Tailwind Starter Kit by
-            <a
-              href="https://www.creative-tim.com"
-              class="text-gray-600 hover:text-gray-900"
-              >Creative Tim</a
-            >.
-          </div>
+          <span>
+
+            <span style="color: #e25555;font-size: 40px;">♥ </span>
+            <span style="color: #e25555;font-size: 40px;">🏀</span>
+            <span style="color: #e25555;font-size: 40px;">💯</span>
+        
+        </span>
         </div>
       </div>
     </div>
   </footer>
   <!-- End of Footer Section -->
 </body>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+  // Global settings:
+  
+  delay: 50, // values from 0 to 3000, with step 50ms
+  duration: 1500, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+
+  AOS.init();
+  
+</script>
+
 <!-- Navigation Script -->
 <script>
+  
+
   function toggleNavbar(collapseID) {
     document.getElementById(collapseID).classList.toggle("hidden");
     document.getElementById(collapseID).classList.toggle("block");
