@@ -1,6 +1,6 @@
 # JS Projects
-## Template
+## Animated Template
 
 Description
 
-- Key points
+- Tailwind CSS Starter Kit used
